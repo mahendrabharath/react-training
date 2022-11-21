@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+img.news-image {
+  width: 100%;
+}
+
+.news-item {
+  position: relative;
+}
+
+h3.news-title {
+  position: absolute;
+  background: #0000007d;
+  color: wheat;
+}
+
+
+
+.news-item:hover {
+/*     width: 105%; */
+  transform: scale(1.05, 1.05);
+    transition: transform 0.5s linear;
+  cursor:pointer;
+}
+
+.news-image:hover {
+  color:turquoise;
+}
+
+.news-list {
+  width: 25%;
+  float: left;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: unset;
+  scrollbar-width: thin;
+}
+
+.news-list::-webkit-scrollbar {
+  width: 10px;
+/*     height: 2em */
+}
+
+.news-list::-webkit-scrollbar-button {
+  background: #ccc
+}
+.news-list::-webkit-scrollbar-track-piece {
+  background: #888
+}
+.news-list::-webkit-scrollbar-thumb {
+  background: #eee
+}​
+.selected-news {
+  width: 70%;
+}
+
+.selected-news img {
+  width: 100%;
+}
+
+.column {
+  width: 50%;
+  padding: 10px;
+}
+
+.selected-news {
+  display: flex;
+}
